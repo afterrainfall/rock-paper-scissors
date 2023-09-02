@@ -73,6 +73,11 @@ alert(`Computer selected ${computerSelection}.`);
          alert(`Round ${round}: Draw!`);
          roundFinal += 1;
       }
+  
+  } else {
+      alert(`Another Round`);
+      roundFinal += 1;
+      return;
   }
 
   alert(`Player Score: ${playerScore}`);
@@ -86,22 +91,23 @@ alert(`Computer selected ${computerSelection}.`);
 
 function gameStart() {
 for (round = 1; round < roundFinal + 1; round++) { 
- if (playerScore == 3 || computerScore == 3) {  
- break; 
- } else {
- playRound(getPlayerChoice(), getComputerChoice());
- }
+  if (playerScore == 3 || computerScore == 3) {  
+    break; 
+  } else {
+    playRound(getPlayerChoice(), getComputerChoice());
+  }
 } 
 
 let winner = (playerScore > computerScore) ? 
 `Winner: Player
- Rounds: ${round}
- Score: ${playerScore} : ${computerScore}`
+Rounds: ${round}
+Score: ${playerScore} : ${computerScore}`
 : 
 `Winner: Computer
- Rounds: ${round}
- Score: ${playerScore} : ${computerScore}`;
-return winner;
+Rounds: ${round}
+Score: ${playerScore} : ${computerScore}`
+
+ alert(winner);
 }
 
 gameStart()
