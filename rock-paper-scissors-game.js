@@ -118,26 +118,6 @@ button_3.addEventListener('click', () => {
 // play game
 
 function gameStart() {
-<<<<<<< HEAD
-for (round = 1; round < roundFinal + 1; round++) { 
-  if (playerScore == 3 || computerScore == 3) {  
-    break; 
-  } else {
-    playRound(getPlayerChoice(), getComputerChoice());
-  }
-} 
-
-let winner = (playerScore > computerScore) ? 
-`Winner: Player
-Rounds: ${round}
-Score: ${playerScore} : ${computerScore}`
-: 
-`Winner: Computer
-Rounds: ${round}
-Score: ${playerScore} : ${computerScore}`
-
- alert(winner);
-=======
   round = 1;
   // draws = 0;
     
@@ -159,7 +139,6 @@ Score: ${playerScore} : ${computerScore}`
 
 //   for (round = 1; round < roundFinal + 1; round++) { 
 //     alert(`Next Round: Round ${round}`);
->>>>>>> rps-ui
 }
 
 function gameEnd() {
