@@ -85,7 +85,7 @@ function playRound(playerSelection, computerSelection) {
   }
 
   round++;
-}
+} 
 
 let button_1 = document.createElement('button');
 let button_2 = document.createElement('button');
